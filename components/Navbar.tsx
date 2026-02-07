@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { useLanguage } from '../LanguageContext';
-import { Language } from '../translations';
+import { useLanguage } from '../LanguageContext.tsx';
+import { Language } from '../translations.ts';
 
 interface NavbarProps {
   darkMode: boolean;

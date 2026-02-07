@@ -1,13 +1,12 @@
-
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Ticker from './components/Ticker';
-import Features from './components/Features';
-import Projects from './components/Projects';
-import Instructor from './components/Instructor';
-import Footer from './components/Footer';
-import { LanguageProvider } from './LanguageContext';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import Ticker from './components/Ticker.tsx';
+import Features from './components/Features.tsx';
+import Projects from './components/Projects.tsx';
+import Instructor from './components/Instructor.tsx';
+import Footer from './components/Footer.tsx';
+import { LanguageProvider } from './LanguageContext.tsx';
 
 const App: React.FC = () => {
   const [darkMode, setDarkMode] = useState(true);
