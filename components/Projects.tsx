@@ -8,22 +8,32 @@ const Projects: React.FC = () => {
     {
       title: "Neo Fintech",
       category: "UI/UX Design • Development",
-      img: "https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=1200"
+      img: "https://i.imgur.com/tEr3YiY.png"
     },
     {
       title: "KN Analytics",
       category: "Dashboard UI • Growth Strategy",
-      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=1200"
+      img: "https://i.imgur.com/s0GpHE6.png"
     },
     {
       title: "Vogue Editorial",
       category: "Web Design • Strategy",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuDqYc6kC8ghHbWl79zWZn4hGDyH_U7fQDYViDcG3AgQU3chSvVD9wA3LtRDWaeX91IZ5qWboFYwq4w9dt3WvXqsNE9gR4s9RF9Xghqu6I-oLIR8xMTOY1RNJB2pPdQFhdAX5XCZz3T3ojEHCPSi3knT03HnrwGhwYPFGPA3Hi8RkvwkQJXuMAXVpYyCM-PG9ovVG7y5exnY5khJWSWTUM_vU9L1EEAFRiuC2xveN5f9_3CKfoWlo7fT9FrkzqYZgojMTu4NEqOmbjc"
+      img: "https://i.imgur.com/HyB8EKW.png"
     },
     {
       title: "Aura Interiors",
       category: "E-commerce • Branding",
-      img: "https://lh3.googleusercontent.com/aida-public/AB6AXuAD1eYmIGuySo5Vwk4lrFdM3h93MDHBiZma4GFvmjZoysvAQBDhB3GGAmWxNJ8pQjiY8PPm-RaVratoxNry7wQSWvVE757HmxM0IgiyV-RbRuFT8tQV7I3HgE2b1R_0l9FSj9uSOFTp-I-PpDBRaKi_u4BapiFYZEKy4mm35tpgj1D5MvkThVHkb2WFma1JJYTrW_L2UKmtJyqg8GlE2KqGdXYidbsB97Fc8mYnXffvWNfHen_dnW7WrLsO3VE_OtFGPVG6UUybA60"
+      img: "https://i.imgur.com/46GGT7t.png"
+    },
+    {
+      title: "Global Horizon",
+      category: "Travel - Experience",
+      img: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1200"
+    },
+    {
+      title: "Mercado Libre Mastery",
+      category: "E-learning - Growth",
+      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
     }
   ];
 
@@ -39,18 +49,18 @@ const Projects: React.FC = () => {
             {t.projects.viewAll} <span className="material-icons-round text-sm">arrow_forward</span>
           </a>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           {works.map((work, idx) => (
             <div key={idx} className="group relative rounded-[2.5rem] overflow-hidden cursor-pointer aspect-[16/10] bg-gray-900 border border-white/5 shadow-2xl transition-all duration-500 hover:shadow-primary/5">
-              <img 
-                alt={work.title} 
-                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 opacity-90 group-hover:opacity-100" 
+              <img
+                alt={work.title}
+                className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 opacity-90 group-hover:opacity-100"
                 src={work.img}
               />
               {/* Overlay with subtle darkening for text legibility */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
-              
+
               <div className="absolute bottom-0 left-0 p-10 transform transition-transform duration-500">
                 <h3 className="text-3xl font-bold text-white mb-2 font-display tracking-tight">{work.title}</h3>
                 <p className="text-white/70 text-sm font-medium tracking-wide uppercase">{work.category}</p>

@@ -26,12 +26,12 @@ export const translations = {
       viewAll: 'Ver todos os projetos'
     },
     instructor: {
-      title: 'Mentores',
-      filters: ['Tudo', 'Filmmaking', 'Design', 'Estratégia'],
+      title: 'Equipe KN Growth',
+      filters: ['Tudo', 'Automações', 'Design', 'Estratégia'],
       members: [
-        { name: 'Abdallah', role: 'Lead Filmmaker', exp: '10+ anos de experiência', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800' },
-        { name: 'Elena Sofia', role: 'Creative Director', exp: '8 anos de experiência', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800' },
-        { name: 'Marco Rossi', role: 'Motion Designer', exp: '12 anos de experiência', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800' }
+        { name: 'Carlos Coloma', role: 'CTO', img: 'https://i.imgur.com/sfFgwDa.png' },
+        { name: 'Gianfranco N.', role: 'CEO KN Growth', img: 'https://i.imgur.com/KZ051q2.png' },
+        { name: 'Leandro V.', role: 'Software Developer', img: 'https://i.imgur.com/vsiDMpt.png' }
       ]
     },
     footer: { rights: 'Todos os direitos reservados.', passion: 'Desenvolvido com paixão para criadores digitais.' }
@@ -60,12 +60,12 @@ export const translations = {
       viewAll: 'Ver todos los proyectos'
     },
     instructor: {
-      title: 'Mentores',
-      filters: ['Todo', 'Filmmaking', 'Diseño', 'Estrategia'],
+      title: 'Equipo KN Growth',
+      filters: ['Todo', 'Automatizaciones', 'Diseño', 'Estrategia'],
       members: [
-        { name: 'Abdallah', role: 'Lead Filmmaker', exp: '10+ años de experiencia', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800' },
-        { name: 'Elena Sofia', role: 'Creative Director', exp: '8 anos de experiencia', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800' },
-        { name: 'Marco Rossi', role: 'Motion Designer', exp: '12 anos de experiencia', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800' }
+        { name: 'Carlos Coloma', role: 'CTO', img: 'https://i.imgur.com/sfFgwDa.png' },
+        { name: 'Gianfranco N.', role: 'CEO KN Growth', img: 'https://i.imgur.com/KZ051q2.png' },
+        { name: 'Leandro V.', role: 'Software Developer', img: 'https://i.imgur.com/vsiDMpt.png' }
       ]
     },
     footer: { rights: 'Todos los derechos reservados.', passion: 'Diseñado con pasión para creadores digitales.' }
@@ -94,12 +94,12 @@ export const translations = {
       viewAll: 'View all projects'
     },
     instructor: {
-      title: 'Mentors',
-      filters: ['All', 'Filmmaking', 'Design', 'Strategy'],
+      title: 'KN Growth Team',
+      filters: ['All', 'Automations', 'Design', 'Strategy'],
       members: [
-        { name: 'Abdallah', role: 'Lead Filmmaker', exp: '10+ years of experience', img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=800' },
-        { name: 'Elena Sofia', role: 'Creative Director', exp: '8 years of experience', img: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=800' },
-        { name: 'Marco Rossi', role: 'Motion Designer', exp: '12 years of experience', img: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=800' }
+        { name: 'Carlos Coloma', role: 'CTO', img: 'https://i.imgur.com/sfFgwDa.png' },
+        { name: 'Gianfranco N.', role: 'CEO KN Growth', img: 'https://i.imgur.com/KZ051q2.png' },
+        { name: 'Leandro V.', role: 'Software Developer', img: 'https://i.imgur.com/vsiDMpt.png' }
       ]
     },
     footer: { rights: 'All rights reserved.', passion: 'Designed with passion for digital creators.' }

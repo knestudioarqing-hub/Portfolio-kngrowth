@@ -28,9 +28,9 @@ const Hero: React.FC = () => {
   return (
     <header className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <img 
-          alt="Space background" 
-          className="w-full h-full object-cover opacity-100 dark:opacity-60 transition-opacity duration-500" 
+        <img
+          alt="Space background"
+          className="w-full h-full object-cover opacity-100 dark:opacity-60 transition-opacity duration-500"
           src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt23uStQ8fzqfBPmXDXVScWerbZUQVjBX9_K48H-V-ZbkAc6xZvXz2iaBOdWArHQDrlJFsE6N35yJXXwzzylgO6PszSx5kAAg4kDXTjgzyifN9A2QMElgvt7f3UXJartz1X-e-cVGlZ-I34jTgUtImDf1EtbEu8IbOZwvgmuQGjiZoW7DQuGaZymDuIY4TApHSqpoykPWA9nugo9SiLfd9zpP34dVoZJi6gB3PaRQJxq3wBLZFR8AiWo_ch9J4O2-yoN2gu6f6cxM"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background-light/80 to-background-light dark:via-background-dark/80 dark:to-background-dark"></div>
@@ -44,17 +44,19 @@ const Hero: React.FC = () => {
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 mb-10 font-light">
             {t.hero.sub}
           </p>
-          
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-            <a 
+            <a
               href="#work"
               onClick={handleScrollToWork}
               className="px-8 py-4 bg-gradient-to-r from-primary to-orange-500 hover:from-orange-600 hover:to-primary text-white font-bold rounded-xl shadow-lg shadow-orange-500/40 transform transition hover:-translate-y-1 text-center"
             >
               {t.hero.workBtn}
             </a>
-            <a 
-              href="#"
+            <a
+              href="https://www.kngrowth.com/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-white/5 border border-white/20 hover:bg-white/10 text-white font-bold rounded-xl backdrop-blur-md transform transition hover:-translate-y-1 text-center"
             >
               {t.hero.webBtn}
@@ -64,9 +66,9 @@ const Hero: React.FC = () => {
 
         <div className="relative hidden lg:flex justify-center items-center">
           <div className="relative w-[450px] h-[450px] rounded-full overflow-hidden border border-white/10 shadow-2xl shadow-primary/20 group">
-            <img 
-              alt="Astronaut" 
-              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+            <img
+              alt="Astronaut"
+              className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700"
               src="https://lh3.googleusercontent.com/aida-public/AB6AXuDi4dXII4EXkie2x4VpIsOCIu7oOgz-hlctitRzIst-6pw8rJuoXgwLhJTUgIBkmy7StsBlwt00ARXQKOnwubEQz4wBmxnDztbK7tEHRK5XEp7bwYzcz5Y7U1TbYPU8V2fJpXomfCom22ScC9duh8_N3Macx8L17C1KbTz1Z9yDJUJ5_n4qVzfeHkXvShAuHbqKV5IlGI4wl0P564gbRxzWWdqFfPaQ2ajsn0ek5ox88ZkzXltP4QBMpHsL8jISe-LhehDCkiJV3YQ"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex flex-col justify-end pb-8 items-center">
