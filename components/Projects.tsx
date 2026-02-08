@@ -28,12 +28,12 @@ const Projects: React.FC = () => {
     {
       title: "Global Horizon",
       category: "Travel - Experience",
-      img: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?auto=format&fit=crop&q=80&w=1200"
+      img: "https://i.imgur.com/ZmBG8AP.jpeg"
     },
     {
       title: "Mercado Libre Mastery",
       category: "E-learning - Growth",
-      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&q=80&w=1200"
+      img: "https://i.imgur.com/uEqeizW.jpeg"
     }
   ];
 
