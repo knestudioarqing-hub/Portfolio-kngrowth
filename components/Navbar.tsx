@@ -34,10 +34,10 @@ const Navbar: React.FC<NavbarProps> = ({ darkMode, toggleDarkMode }) => {
   ];
 
   return (
-    <nav className={`fixed w-full z-50 top-0 left-0 py-4 px-6 md:px-12 transition-all duration-300`}>
-      <div className={`max-w-7xl mx-auto flex justify-between items-center px-6 py-3 rounded-full border border-white/10 shadow-lg transition-all duration-300 ${scrolled ? 'bg-black/40 backdrop-blur-lg border-white/20' : 'bg-transparent'}`}>
+    <nav className={`fixed w-full z-50 top-0 left-0 py-3 md:py-4 px-3 md:px-12 transition-all duration-300`}>
+      <div className={`max-w-7xl mx-auto flex justify-between items-center px-4 md:px-6 py-2 md:py-3 rounded-full border border-white/10 shadow-lg transition-all duration-300 ${scrolled ? 'bg-black/40 backdrop-blur-lg border-white/20' : 'bg-transparent'}`}>
         <div className="flex items-center gap-2">
-          <span className="font-light text-xl md:text-2xl tracking-wider text-white" style={{ fontFamily: 'Inter, sans-serif' }}>
+          <span className="font-display font-medium text-xl md:text-2xl tracking-tight text-white">
             KN Growth
           </span>
         </div>

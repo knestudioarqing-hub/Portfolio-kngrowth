@@ -14,7 +14,7 @@ const Features: React.FC = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {features.map((text: string, idx: number) => (
-            <div 
+            <div
               key={idx}
               className="group bg-white dark:bg-[#121212] border border-gray-200 dark:border-white/10 rounded-3xl p-8 text-center hover:border-primary/50 transition-all duration-300 hover:shadow-xl hover:shadow-primary/5"
             >

@@ -6,18 +6,18 @@ const Projects: React.FC = () => {
   const { t } = useLanguage();
   const works = [
     {
-      title: "Neo Fintech",
+      title: "KN Growth",
       category: "UI/UX Design • Development",
       img: "https://i.imgur.com/tEr3YiY.png"
     },
     {
-      title: "KN Analytics",
-      category: "Dashboard UI • Growth Strategy",
+      title: "Clínica de Saúde",
+      category: "Medicina Estética • Growth Strategy",
       img: "https://i.imgur.com/s0GpHE6.png"
     },
     {
-      title: "Vogue Editorial",
-      category: "Web Design • Strategy",
+      title: "E-commerce",
+      category: "Landing Page • Vendas Online",
       img: "https://i.imgur.com/HyB8EKW.png"
     },
     {
@@ -26,8 +26,8 @@ const Projects: React.FC = () => {
       img: "https://i.imgur.com/46GGT7t.png"
     },
     {
-      title: "Global Horizon",
-      category: "Travel - Experience",
+      title: "Agência de Turismo",
+      category: "Experiências • Reservas",
       img: "https://i.imgur.com/ZmBG8AP.jpeg"
     },
     {
@@ -40,10 +40,10 @@ const Projects: React.FC = () => {
   return (
     <section className="py-24 bg-white dark:bg-[#080808] border-t border-gray-200 dark:border-white/5 scroll-mt-24" id="work">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+        <div className="flex flex-col md:flex-row justify-between items-center md:items-end mb-12 text-center md:text-left">
           <div>
-            <span className="text-primary font-bold tracking-widest uppercase text-sm">{t.projects.tag}</span>
-            <h2 className="font-display text-3xl md:text-5xl font-bold mt-2 text-gray-900 dark:text-white">{t.projects.title}</h2>
+            <span className="text-primary font-bold tracking-widest uppercase text-sm block">{t.projects.tag}</span>
+            <h2 className="font-display text-3xl md:text-5xl font-bold mt-2 text-gray-900 dark:text-white leading-tight">{t.projects.title}</h2>
           </div>
           <a className="hidden md:flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-primary dark:hover:text-primary transition-colors mt-4 md:mt-0 font-medium" href="#">
             {t.projects.viewAll} <span className="material-icons-round text-sm">arrow_forward</span>
@@ -61,9 +61,10 @@ const Projects: React.FC = () => {
               {/* Overlay with subtle darkening for text legibility */}
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
 
-              <div className="absolute bottom-0 left-0 p-10 transform transition-transform duration-500">
-                <h3 className="text-3xl font-bold text-white mb-2 font-display tracking-tight">{work.title}</h3>
-                <p className="text-white/70 text-sm font-medium tracking-wide uppercase">{work.category}</p>
+              <div className="absolute bottom-0 left-0 p-6 md:p-10 transform transition-all duration-500 group-hover:translate-y-[-10px]">
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 font-display tracking-tight">{work.title}</h3>
+                <div className="h-0.5 w-12 bg-primary mb-3 transform origin-left transition-transform duration-500 scale-x-0 group-hover:scale-x-100"></div>
+                <p className="text-white/80 text-xs md:text-sm font-bold tracking-widest uppercase bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full inline-block border border-white/10">{work.category}</p>
               </div>
 
               {/* Action Button */}

@@ -11,13 +11,13 @@ export const translations = {
       workBtn: 'Ver Trabalhos',
       webBtn: 'Ir para o Site'
     },
-    ticker: ['Inscreva-se', 'Videomaker mobile', 'KN Growth', 'Storytelling Visual', 'Web Design'],
+    ticker: ['KN Growth', 'Landing page', 'Webdesign', 'CRM', 'Automações'],
     features: {
-      title: 'Ideal para você que:',
+      title: 'Se você quer parar de aceitar menos:',
       items: [
-        'Gosta do audiovisual e deseja fazer uma transição de carreira em semanas.',
-        'Está em busca de uma nova profissão sem horários rígidos das 9h às 18h.',
-        'Quer se posicionar e vender nas redes sociais com um portfólio de alta qualidade.'
+        'Chega de improvisar e perder dinheiro. Escala exige previsibilidade.',
+        'Sua imagem não pode parecer amadora. É hora de transmitir confiança e autoridade.',
+        'Pareça do tamanho que seu negócio realmente é. Imagem forte gera confiança.',
       ]
     },
     projects: {
@@ -45,13 +45,13 @@ export const translations = {
       workBtn: 'Ver Trabajos',
       webBtn: 'Ir a la Web'
     },
-    ticker: ['Regístrate', 'Videomaker móvil', 'KN Growth', 'Storytelling Visual', 'Diseño Web'],
+    ticker: ['KN Growth', 'Landing page', 'Webdesign', 'CRM', 'Automatizaciones'],
     features: {
-      title: 'Ideal para ti que:',
+      title: 'Si quieres dejar de aceptar menos:',
       items: [
-        'Te gusta el audiovisual y quieres hacer una transición de carrera en semanas.',
-        'Buscas una nueva profesión sin horarios rígidos de 9h a 18h.',
-        'Quieres posicionarte y vender en redes sociales con un portfólio de alta calidad.'
+        'Basta de improvisar y perder dinero. Escalar exige previsibilidad.',
+        'Tu imagen no puede parecer amateur. Es hora de transmitir confianza y autoridad.',
+        'Luce del tamaño que realmente tiene tu negocio. Una imagen sólida genera confianza.',
       ]
     },
     projects: {
@@ -79,7 +79,7 @@ export const translations = {
       workBtn: 'View Work',
       webBtn: 'Visit Website'
     },
-    ticker: ['Sign up', 'Mobile Videomaker', 'KN Growth', 'Visual Storytelling', 'Web Design'],
+    ticker: ['KN Growth', 'Landing page', 'Webdesign', 'CRM', 'Automations'],
     features: {
       title: 'Ideal for those who:',
       items: [

@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
         <img
           alt="Space background"
           className="w-full h-full object-cover opacity-100 dark:opacity-60 transition-opacity duration-500"
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt23uStQ8fzqfBPmXDXVScWerbZUQVjBX9_K48H-V-ZbkAc6xZvXz2iaBOdWArHQDrlJFsE6N35yJXXwzzylgO6PszSx5kAAg4kDXTjgzyifN9A2QMElgvt7f3UXJartz1X-e-cVGlZ-I34jTgUtImDf1EtbEu8IbOZwvgmuQGjiZoW7DQuGaZymDuIY4TApHSqpoykPWA9nugo9SiLfd9zpP34dVoZJi6gB3PaRQJxq3wBLZFR8AiWo_ch9J4O2-yoN2gu6f6cxM"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuAt23uStQ8fzqfBPmXDXVScWerbZUQVjBX9_K48H-V-ZbkAc6xZvXz2iaBOdWArHQDrlJFsE6N35yJXXwzzylgO6PszSx5kAAg4kDXTjgzyifN9A2QMElgvt7f3UXartz1X-e-cVGlZ-I34jTgUtImDf1EtbEu8IbOZwvgmuQGjiZoW7DQuGaZymDuIY4TApHSqpoykPWA9nugo9SiLfd9zpP34dVoZJi6gB3PaRQJxq3wBLZFR8AiWo_ch9J4O2-yoN2gu6f6cxM"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background-light/80 to-background-light dark:via-background-dark/80 dark:to-background-dark"></div>
       </div>
