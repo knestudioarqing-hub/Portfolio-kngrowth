@@ -27,7 +27,7 @@ const App: React.FC = () => {
         <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
         <Hero />
         <Ticker />
-        <Features />
+        <Features darkMode={darkMode} />
         <Projects />
         <Instructor />
         <Footer />

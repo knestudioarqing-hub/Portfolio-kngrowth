@@ -22,7 +22,7 @@ export const translations = {
     },
     projects: {
       tag: 'Trabalhos Selecionados',
-      title: 'Projetos Recentes',
+      title: 'Projetos Desenvolvidos',
       viewAll: 'Ver todos os projetos'
     },
     instructor: {
@@ -56,7 +56,7 @@ export const translations = {
     },
     projects: {
       tag: 'Trabajos Seleccionados',
-      title: 'Proyectos Recientes',
+      title: 'Proyectos Desarrollados',
       viewAll: 'Ver todos los proyectos'
     },
     instructor: {
@@ -90,7 +90,7 @@ export const translations = {
     },
     projects: {
       tag: 'Selected Work',
-      title: 'Recent Projects',
+      title: 'Developed Projects',
       viewAll: 'View all projects'
     },
     instructor: {

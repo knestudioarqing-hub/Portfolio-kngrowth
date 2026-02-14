@@ -6,9 +6,16 @@ const Instructor: React.FC = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="relative bg-black py-24 scroll-mt-24 overflow-hidden" id="about">
+    <section className="relative bg-white dark:bg-black py-24 scroll-mt-24 overflow-hidden" id="about">
       {/* Grid Background Effect */}
-      <div className="absolute inset-0 opacity-10 pointer-events-none"
+      <div className="absolute inset-0 opacity-10 dark:opacity-10 pointer-events-none"
+        style={{
+          backgroundImage: `linear-gradient(currentColor 1px, transparent 1px), linear-gradient(90deg, currentColor 1px, transparent 1px)`,
+          backgroundSize: '40px 40px',
+          color: 'rgba(0, 0, 0, 0.1)'
+        }}>
+      </div>
+      <div className="absolute inset-0 opacity-0 dark:opacity-10 pointer-events-none hidden dark:block"
         style={{
           backgroundImage: `linear-gradient(#222 1px, transparent 1px), linear-gradient(90deg, #222 1px, transparent 1px)`,
           backgroundSize: '40px 40px'
@@ -17,7 +24,7 @@ const Instructor: React.FC = () => {
 
       <div className="container mx-auto px-6 relative z-10">
         <div className="max-w-xl mx-auto text-center mb-16">
-          <h2 className="font-display text-4xl md:text-6xl font-bold text-white mb-6">
+          <h2 className="font-display text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
             {t.instructor.title}
           </h2>
 
@@ -25,10 +32,10 @@ const Instructor: React.FC = () => {
             <div className="flex items-center gap-4 mx-auto min-w-max">
               {t.instructor.filters.map((filter: string, i: number) => (
                 <React.Fragment key={i}>
-                  <button className={`hover:text-primary transition-all whitespace-nowrap uppercase tracking-widest ${i === 0 ? 'text-primary' : 'text-gray-500'}`}>
+                  <button className={`hover:text-primary transition-all whitespace-nowrap uppercase tracking-widest ${i === 0 ? 'text-primary' : 'text-gray-400 dark:text-gray-500'}`}>
                     {filter}
                   </button>
-                  {i < t.instructor.filters.length - 1 && <div className="w-6 h-[1px] bg-gray-800 flex-shrink-0"></div>}
+                  {i < t.instructor.filters.length - 1 && <div className="w-6 h-[1px] bg-gray-200 dark:bg-gray-800 flex-shrink-0"></div>}
                 </React.Fragment>
               ))}
             </div>
@@ -40,18 +47,18 @@ const Instructor: React.FC = () => {
             <div
               key={idx}
               className={`group relative rounded-[2rem] overflow-hidden aspect-[4/5] bg-[#111] border border-white/5 ${member.role.includes('CEO') ? 'order-3 md:order-2' :
-                  idx === 0 ? 'order-1 md:order-1' : 'order-2 md:order-3'
+                idx === 0 ? 'order-1 md:order-1' : 'order-2 md:order-3'
                 }`}
             >
               {/* Image with grayscale to color transition */}
               <img
                 alt={member.name}
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-110 opacity-70 group-hover:opacity-100"
+                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out transform group-hover:scale-110 opacity-90 group-hover:opacity-100"
                 src={member.img}
               />
 
               {/* Bottom UI Overlay */}
-              <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end">
+              <div className="absolute bottom-6 left-6 right-6 flex justify-between items-end z-10">
                 <div className="text-white">
                   <p className="text-white/80 text-xs font-normal mb-1.5 uppercase tracking-wider">{member.role}</p>
                   <h3 className="text-2xl font-bold tracking-tight font-display">{member.name}</h3>
@@ -63,7 +70,7 @@ const Instructor: React.FC = () => {
               </div>
 
               {/* Subtle Gradient Shadow for legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-60 pointer-events-none"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-80 pointer-events-none"></div>
             </div>
           ))}
         </div>
