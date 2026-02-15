@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
       return (
         <div className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] leading-snug sm:leading-tight mb-6 sm:mb-8 lg:mb-10 text-gray-600 dark:text-gray-300 mx-auto lg:mx-0 font-instrument px-4 sm:px-0">
           <span className="block font-normal">{parts[0]}</span>
-          <span className="block font-bold mt-2 sm:mt-4 text-white">{parts[1]}</span>
+          <span className="block font-bold mt-0.5 sm:mt-4 text-white">{parts[1]}</span>
         </div>
       );
     }
@@ -51,22 +51,27 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <header className="relative min-h-[100svh] flex items-end sm:items-center justify-center pt-20 sm:pt-24 pb-8 sm:pb-12 overflow-hidden">
+    <header className="relative min-h-[100svh] flex items-center justify-center py-12 sm:pt-24 sm:pb-12 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        {/* Background image - centered cover on mobile to show large chess piece, object-cover on desktop */}
+        {/* Mobile background image */}
         <img
           alt="Background"
-          className="w-full h-full object-cover opacity-100 transition-transform duration-100 ease-out scale-125 sm:scale-110"
+          className="w-full h-full object-cover sm:hidden opacity-100"
+          src="https://i.imgur.com/qjvaNXf.jpeg"
+        />
+        {/* Desktop background image */}
+        <img
+          alt="Background"
+          className="w-full h-full object-cover hidden sm:block opacity-100 transition-transform duration-100 ease-out scale-110"
           src="https://i.imgur.com/8TFJj8m.jpeg"
           style={{
-            objectPosition: 'center',
             transform: isTouchDevice ? 'none' : `translate(${mousePosition.x * -1}px, ${mousePosition.y * -1}px) scale(1.1)`,
           }}
         />
         {/* Desktop gradient */}
         <div className="hidden sm:block absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background-light dark:to-background-dark"></div>
         {/* Mobile dark overlay for text contrast */}
-        <div className="sm:hidden absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent"></div>
+        <div className="sm:hidden absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
         {/* spotlight effect */}
         <div
           className="absolute inset-0 pointer-events-none bg-gradient-to-r from-primary/10 to-purple-500/10 opacity-0 lg:opacity-30 transition-opacity duration-500"
@@ -80,7 +85,7 @@ const Hero: React.FC = () => {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center lg:items-start justify-center text-center lg:text-left">
         <div className="max-w-4xl mx-auto lg:mx-0">
           {/* Title - white with shadow on mobile for contrast, gradient on desktop */}
-          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-bold leading-[1.1] sm:leading-tight mb-4 sm:mb-6 text-white sm:text-transparent sm:bg-clip-text sm:bg-gradient-to-b sm:from-white sm:via-white sm:to-black/90 drop-shadow-lg sm:drop-shadow-sm pb-2 px-2 sm:px-0">
+          <h1 className="font-serif text-[40px] sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-bold leading-[1.1] sm:leading-tight mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-black/90 drop-shadow-sm pb-2 px-2 sm:px-0 whitespace-nowrap">
             {t.hero.title}
           </h1>
           {renderSubtitle()}
