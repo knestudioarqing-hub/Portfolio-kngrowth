@@ -4,9 +4,17 @@ import { useLanguage } from '../LanguageContext';
 const Hero: React.FC = () => {
   const { t } = useLanguage();
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+  const [isTouchDevice, setIsTouchDevice] = useState(false);
 
   useEffect(() => {
+    // Detectar si es un dispositivo táctil
+    const checkTouchDevice = () => {
+      setIsTouchDevice('ontouchstart' in window || navigator.maxTouchPoints > 0);
+    };
+    checkTouchDevice();
+
     const handleMouseMove = (e: MouseEvent) => {
+      if (isTouchDevice) return;
       setMousePosition({
         x: (e.clientX / window.innerWidth - 0.5) * 20, // -10 to 10
         y: (e.clientY / window.innerHeight - 0.5) * 20, // -10 to 10
@@ -15,20 +23,20 @@ const Hero: React.FC = () => {
 
     window.addEventListener('mousemove', handleMouseMove);
     return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
+  }, [isTouchDevice]);
 
   const renderSubtitle = () => {
     const parts = t.hero.sub.split('|');
     if (parts.length === 2) {
       return (
-        <div className="text-lg md:text-2xl lg:text-[40px] leading-tight mb-10 text-gray-600 dark:text-gray-300 mx-auto lg:mx-0 font-instrument">
+        <div className="text-xl sm:text-2xl md:text-3xl lg:text-[40px] leading-snug sm:leading-tight mb-6 sm:mb-8 lg:mb-10 text-gray-600 dark:text-gray-300 mx-auto lg:mx-0 font-instrument px-4 sm:px-0">
           <span className="block font-normal">{parts[0]}</span>
-          <span className="block font-bold mt-4 text-white">{parts[1]}</span>
+          <span className="block font-bold mt-2 sm:mt-4 text-white">{parts[1]}</span>
         </div>
       );
     }
     return (
-      <p className="text-lg md:text-2xl text-gray-600 dark:text-gray-300 mb-10 font-light max-w-2xl mx-auto lg:mx-0">
+      <p className="text-xl sm:text-2xl md:text-3xl text-gray-600 dark:text-gray-300 mb-6 sm:mb-8 lg:mb-10 font-light max-w-2xl mx-auto lg:mx-0 px-4 sm:px-0">
         {t.hero.sub}
       </p>
     );
@@ -43,7 +51,7 @@ const Hero: React.FC = () => {
   };
 
   return (
-    <header className="relative min-h-screen flex items-center justify-center pt-24 pb-12 overflow-hidden">
+    <header className="relative min-h-[100svh] flex items-center justify-center pt-20 sm:pt-24 pb-8 sm:pb-12 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img
           alt="Background"
@@ -64,20 +72,20 @@ const Hero: React.FC = () => {
         />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10 flex flex-col items-center lg:items-start justify-center text-center lg:text-left">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center lg:items-start justify-center text-center lg:text-left">
         <div
           className="max-w-4xl mx-auto lg:mx-0"
         >
-          <h1 className="font-serif text-5xl md:text-7xl lg:text-[80px] font-bold leading-tight mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-black/90 drop-shadow-sm pb-2">
+          <h1 className="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-[80px] font-bold leading-[1.1] sm:leading-tight mb-4 sm:mb-6 text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-black/90 drop-shadow-sm pb-2 px-2 sm:px-0">
             {t.hero.title}
           </h1>
           {renderSubtitle()}
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center lg:justify-start w-full sm:w-auto px-4 sm:px-0">
             <a
               href="#work"
               onClick={handleScrollToWork}
-              className="px-8 py-4 bg-[#FF5733] text-white font-bold rounded-[10px] shadow-[inset_0px_0px_6px_0px_rgba(0,0,0,0.3)] drop-shadow-[0_4px_6px_rgba(255,87,51,0.3)] hover:bg-[#E64A2E] transform transition-all duration-300 ease-in-out hover:-translate-y-1 text-center"
+              className="px-6 sm:px-8 py-3.5 sm:py-4 bg-[#FF5733] text-white font-bold rounded-[10px] shadow-[inset_0px_0px_6px_0px_rgba(0,0,0,0.3)] drop-shadow-[0_4px_6px_rgba(255,87,51,0.3)] hover:bg-[#E64A2E] transform transition-all duration-300 ease-in-out hover:-translate-y-1 text-center text-sm sm:text-base active:scale-95 min-h-[52px] sm:min-h-[56px] flex items-center justify-center"
             >
               {t.hero.workBtn}
             </a>
@@ -85,7 +93,7 @@ const Hero: React.FC = () => {
               href="https://www.kngrowth.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-4 bg-black border border-white/20 hover:bg-white/10 text-white font-instrument font-normal rounded-[10px] shadow-[inset_0px_0px_6px_0px_#4C4C4C] backdrop-blur-md transform transition-all duration-300 ease-in-out hover:-translate-y-1 text-center"
+              className="px-6 sm:px-8 py-3.5 sm:py-4 bg-black border border-white/20 hover:bg-white/10 text-white font-instrument font-normal rounded-[10px] shadow-[inset_0px_0px_6px_0px_#4C4C4C] backdrop-blur-md transform transition-all duration-300 ease-in-out hover:-translate-y-1 text-center text-sm sm:text-base active:scale-95 min-h-[52px] sm:min-h-[56px] flex items-center justify-center"
             >
               {t.hero.webBtn}
             </a>
