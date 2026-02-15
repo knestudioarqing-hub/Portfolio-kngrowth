@@ -72,17 +72,17 @@ const Features: React.FC<FeaturesProps> = ({ darkMode }) => {
                 )}
 
                 {/* Text Content - Left Side */}
-                <div className="relative z-10 pr-28 flex-1">
+                <div className="relative z-10 pr-20 flex-1">
                   {(() => {
                     const parts = text.split('.');
                     const mainTitle = parts[0] + '.';
                     const subtitle = parts.slice(1).join('.').trim();
                     return (
                       <>
-                        <h3 className={`text-left text-xl font-bold mb-2 line-clamp-2 transition-colors duration-500 ${darkMode ? 'text-white group-hover:text-white' : 'text-gray-900 group-hover:text-gray-900'}`}>
+                        <h3 className={`text-left text-xl font-bold mb-2 transition-colors duration-500 ${darkMode ? 'text-white group-hover:text-white' : 'text-gray-900 group-hover:text-gray-900'}`}>
                           {mainTitle}
                         </h3>
-                        <p className={`text-left text-base font-normal line-clamp-2 transition-colors duration-500 ${darkMode ? 'text-gray-400 group-hover:text-gray-200' : 'text-gray-600 group-hover:text-gray-800'}`}>
+                        <p className={`text-left text-base font-normal transition-colors duration-500 ${darkMode ? 'text-gray-400 group-hover:text-gray-200' : 'text-gray-600 group-hover:text-gray-800'}`}>
                           {subtitle}
                         </p>
                       </>
@@ -90,9 +90,9 @@ const Features: React.FC<FeaturesProps> = ({ darkMode }) => {
                   })()}
                 </div>
 
-                {/* Large Icon Container - Right Side */}
+                {/* Smaller Icon Container - Right Side */}
                 <div
-                  className={`relative z-10 flex-shrink-0 w-24 h-24 md:w-32 md:h-32 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-105
+                  className={`relative z-10 flex-shrink-0 w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-105
                     ${darkMode ? '' : 'bg-gray-50/80 border border-gray-100 group-hover:bg-primary/5 group-hover:border-primary/20'}`}
                   style={darkMode ? {
                     background: 'rgba(255, 255, 255, 0.05)',
@@ -101,7 +101,7 @@ const Features: React.FC<FeaturesProps> = ({ darkMode }) => {
                   } : {}}
                 >
                   {darkMode && <div className="absolute inset-0 rounded-2xl bg-blue-500/0 group-hover:bg-blue-500/20 transition-colors duration-500 blur-[2px]" />}
-                  <span className={`material-icons-round text-4xl md:text-5xl relative z-10 transition-colors duration-300 ${darkMode ? 'text-white/90' : 'text-gray-400 group-hover:text-primary'}`}>{icon}</span>
+                  <span className={`material-icons-round text-2xl md:text-3xl relative z-10 transition-colors duration-300 ${darkMode ? 'text-white/90' : 'text-gray-400 group-hover:text-primary'}`}>{icon}</span>
                 </div>
               </div>
             );
