@@ -62,9 +62,10 @@ const Projects: React.FC = () => {
       ]
     },
     {
-      title: "Nuevo Proyecto 2",
-      category: "Categoría • Servicio",
-      img: "https://i.imgur.com/tEr3YiY.png"
+      title: "Brave Gym",
+      category: "Fitness • Landing Page",
+      img: "https://i.imgur.com/xnA1kKP.png",
+      fullImg: "https://i.imgur.com/xnA1kKP.png"
     }
   ];
 

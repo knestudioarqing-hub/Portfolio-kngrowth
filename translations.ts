@@ -5,10 +5,10 @@ export const translations = {
   pt: {
     nav: { work: 'Trabalho', web: 'Ir para o Site', team: 'Equipe' },
     hero: {
-      title: 'Quer se tornar um profissional {span} no mercado?',
-      span: 'mais disputado',
-      sub: 'Eleve sua presença digital. Crio experiências web personalizadas que unem estética e funcionalidade.',
-      workBtn: 'Ver Trabalhos',
+      title: 'A Arte da Guerra',
+      span: '',
+      sub: 'Os resultados não se improvisam.|São desenhados com estratégia.',
+      workBtn: 'Ver batalhas vencidas',
       webBtn: 'Ir para o Site'
     },
     ticker: ['KN Growth', 'Landing page', 'Webdesign', 'CRM', 'Automações'],
@@ -39,10 +39,10 @@ export const translations = {
   es: {
     nav: { work: 'Trabajo', web: 'Ir a la Web', team: 'Equipo' },
     hero: {
-      title: '¿Quieres convertirte en un profesional {span} en el mercado?',
-      span: 'más solicitado',
-      sub: 'Eleva tu presencia digital. Creo experiencias web personalizadas que fusionan estética y funcionalidad.',
-      workBtn: 'Ver Trabajos',
+      title: 'El Arte de la Guerra',
+      span: '',
+      sub: 'Los resultados no se improvisan.|Se diseñan con estrategia.',
+      workBtn: 'Ver batallas ganadas',
       webBtn: 'Ir a la Web'
     },
     ticker: ['KN Growth', 'Landing page', 'Webdesign', 'CRM', 'Automatizaciones'],
@@ -55,7 +55,7 @@ export const translations = {
       ]
     },
     projects: {
-      tag: 'Trabajos Seleccionados',
+      tag: 'Trabajos Selecionados',
       title: 'Proyectos Desarrollados',
       viewAll: 'Ver todos los proyectos'
     },
@@ -73,10 +73,10 @@ export const translations = {
   en: {
     nav: { work: 'Work', web: 'Visit Website', team: 'Team' },
     hero: {
-      title: 'Want to become a {span} professional in the market?',
-      span: 'more sought-after',
-      sub: 'Elevate your digital presence. I craft bespoke web experiences that merge aesthetics with functionality.',
-      workBtn: 'View Work',
+      title: 'The Art of War',
+      span: '',
+      sub: 'Results are not improvised.|They are designed with strategy.',
+      workBtn: 'View won battles',
       webBtn: 'Visit Website'
     },
     ticker: ['KN Growth', 'Landing page', 'Webdesign', 'CRM', 'Automations'],
