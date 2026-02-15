@@ -53,7 +53,7 @@ const Features: React.FC<FeaturesProps> = ({ darkMode }) => {
             return (
               <div
                 key={idx}
-                className={`group relative rounded-[2rem] p-8 min-h-[280px] overflow-hidden transition-all duration-700 ease-out hover:-translate-y-2
+                className={`group relative rounded-[2rem] p-8 min-h-[280px] overflow-hidden transition-all duration-700 ease-out hover:-translate-y-2 flex items-center
                   ${darkMode
                     ? ''
                     : 'bg-white border border-gray-200 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/20'
@@ -72,17 +72,17 @@ const Features: React.FC<FeaturesProps> = ({ darkMode }) => {
                 )}
 
                 {/* Text Content - Left Side */}
-                <div className="relative z-10 pr-28">
+                <div className="relative z-10 pr-28 flex-1">
                   {(() => {
                     const parts = text.split('.');
                     const mainTitle = parts[0] + '.';
                     const subtitle = parts.slice(1).join('.').trim();
                     return (
                       <>
-                        <h3 className={`text-left text-xl font-bold mb-2 transition-colors duration-500 ${darkMode ? 'text-white group-hover:text-white' : 'text-gray-900 group-hover:text-gray-900'}`}>
+                        <h3 className={`text-left text-xl font-bold mb-2 line-clamp-1 transition-colors duration-500 ${darkMode ? 'text-white group-hover:text-white' : 'text-gray-900 group-hover:text-gray-900'}`}>
                           {mainTitle}
                         </h3>
-                        <p className={`text-left text-base font-normal leading-relaxed transition-colors duration-500 ${darkMode ? 'text-gray-400 group-hover:text-gray-200' : 'text-gray-600 group-hover:text-gray-800'}`}>
+                        <p className={`text-left text-base font-normal line-clamp-1 transition-colors duration-500 ${darkMode ? 'text-gray-400 group-hover:text-gray-200' : 'text-gray-600 group-hover:text-gray-800'}`}>
                           {subtitle}
                         </p>
                       </>
@@ -92,7 +92,7 @@ const Features: React.FC<FeaturesProps> = ({ darkMode }) => {
 
                 {/* Large Icon Container - Right Side */}
                 <div
-                  className={`absolute right-4 top-1/2 -translate-y-1/2 z-10 w-24 h-24 md:w-32 md:h-32 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-105
+                  className={`relative z-10 flex-shrink-0 w-24 h-24 md:w-32 md:h-32 rounded-2xl flex items-center justify-center transition-all duration-500 group-hover:scale-105
                     ${darkMode ? '' : 'bg-gray-50/80 border border-gray-100 group-hover:bg-primary/5 group-hover:border-primary/20'}`}
                   style={darkMode ? {
                     background: 'rgba(255, 255, 255, 0.05)',
