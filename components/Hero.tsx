@@ -53,12 +53,13 @@ const Hero: React.FC = () => {
   return (
     <header className="relative min-h-[100svh] flex items-end sm:items-center justify-center pt-20 sm:pt-24 pb-8 sm:pb-12 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        {/* Background image - object-contain on mobile to show full image, object-cover on desktop */}
+        {/* Background image - centered cover on mobile to show large chess piece, object-cover on desktop */}
         <img
           alt="Background"
-          className="w-full h-full object-contain sm:object-cover opacity-100 transition-transform duration-100 ease-out scale-110"
+          className="w-full h-full object-cover opacity-100 transition-transform duration-100 ease-out scale-125 sm:scale-110"
           src="https://i.imgur.com/8TFJj8m.jpeg"
           style={{
+            objectPosition: 'center',
             transform: isTouchDevice ? 'none' : `translate(${mousePosition.x * -1}px, ${mousePosition.y * -1}px) scale(1.1)`,
           }}
         />
