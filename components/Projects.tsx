@@ -139,13 +139,13 @@ const Projects: React.FC = () => {
                 className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 opacity-90 group-hover:opacity-100"
                 src={work.img}
               />
-              {/* Overlay with subtle darkening for text legibility */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+              {/* Enhanced overlay for better text contrast */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent opacity-90 group-hover:opacity-70 transition-opacity"></div>
 
               <div className="absolute bottom-0 left-0 p-6 md:p-10 transform transition-all duration-500 group-hover:translate-y-[-10px]">
-                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 font-display tracking-tight">{work.title}</h3>
+                <h3 className="text-2xl md:text-3xl font-bold text-white mb-2 font-display tracking-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">{work.title}</h3>
                 <div className="h-0.5 w-12 bg-primary mb-3 transform origin-left transition-transform duration-500 scale-x-0 group-hover:scale-x-100"></div>
-                <p className="text-white/80 text-xs md:text-sm font-bold tracking-widest uppercase bg-black/20 backdrop-blur-sm px-3 py-1 rounded-full inline-block border border-white/10">{work.category}</p>
+                <p className="text-white text-xs md:text-sm font-bold tracking-widest uppercase bg-black/60 backdrop-blur-md px-4 py-2 rounded-full inline-block border border-white/20 shadow-lg">{work.category}</p>
               </div>
 
               {/* Action Button */}
