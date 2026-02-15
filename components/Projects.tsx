@@ -132,7 +132,7 @@ const Projects: React.FC = () => {
             <div
               key={idx}
               onClick={() => handleWorkClick(work)}
-              className={`group relative rounded-[2.5rem] overflow-hidden ${work.fullImg ? 'cursor-zoom-in' : 'cursor-default'} aspect-[16/10] bg-gray-900 border border-white/5 shadow-2xl transition-all duration-500 hover:shadow-primary/5`}
+              className={`group relative rounded-[20px] overflow-hidden ${work.fullImg ? 'cursor-zoom-in' : 'cursor-default'} aspect-[16/10] bg-gray-900 border border-white/5 shadow-2xl transition-all duration-500 hover:shadow-primary/5`}
             >
               <img
                 alt={work.title}
