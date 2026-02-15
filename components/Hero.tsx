@@ -23,7 +23,7 @@ const Hero: React.FC = () => {
       return (
         <div className="text-lg md:text-2xl lg:text-[40px] leading-tight mb-10 text-gray-600 dark:text-gray-300 mx-auto lg:mx-0 font-instrument">
           <span className="block font-normal">{parts[0]}</span>
-          <span className="block font-bold mt-4 text-[#FF5733]">{parts[1]}</span>
+          <span className="block font-bold mt-4 text-white">{parts[1]}</span>
         </div>
       );
     }
@@ -77,7 +77,7 @@ const Hero: React.FC = () => {
             <a
               href="#work"
               onClick={handleScrollToWork}
-              className="px-8 py-4 bg-white text-black font-bold rounded-[10px] shadow-[inset_0px_0px_6px_0px_rgba(0,0,0,1)] drop-shadow-[0_4px_6px_rgba(255,255,255,0.2)] hover:bg-gray-100 transform transition-all duration-300 ease-in-out hover:-translate-y-1 text-center"
+              className="px-8 py-4 bg-[#FF5733] text-white font-bold rounded-[10px] shadow-[inset_0px_0px_6px_0px_rgba(0,0,0,0.3)] drop-shadow-[0_4px_6px_rgba(255,87,51,0.3)] hover:bg-[#E64A2E] transform transition-all duration-300 ease-in-out hover:-translate-y-1 text-center"
             >
               {t.hero.workBtn}
             </a>
