@@ -57,7 +57,7 @@ const Hero: React.FC = () => {
         <img
           alt="Background"
           className="w-full h-full object-cover sm:hidden opacity-100"
-          src="https://i.imgur.com/qjvaNXf.jpeg"
+          src="https://i.imgur.com/LbmU0ip.jpeg"
         />
         {/* Desktop background image */}
         <img
