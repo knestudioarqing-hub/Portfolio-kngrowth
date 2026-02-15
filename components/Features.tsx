@@ -86,9 +86,21 @@ const Features: React.FC<FeaturesProps> = ({ darkMode }) => {
                 </div>
 
                 <div className="relative z-10 flex-1">
-                  <p className={`text-left text-lg font-medium leading-relaxed transition-colors duration-500 ${darkMode ? 'text-gray-400 group-hover:text-gray-200' : 'text-gray-600 group-hover:text-gray-800'}`}>
-                    {text}
-                  </p>
+                  {(() => {
+                    const parts = text.split('.');
+                    const mainTitle = parts[0] + '.';
+                    const subtitle = parts.slice(1).join('.').trim();
+                    return (
+                      <>
+                        <h3 className={`text-left text-xl font-bold mb-2 transition-colors duration-500 ${darkMode ? 'text-white group-hover:text-white' : 'text-gray-900 group-hover:text-gray-900'}`}>
+                          {mainTitle}
+                        </h3>
+                        <p className={`text-left text-base font-normal leading-relaxed transition-colors duration-500 ${darkMode ? 'text-gray-400 group-hover:text-gray-200' : 'text-gray-600 group-hover:text-gray-800'}`}>
+                          {subtitle}
+                        </p>
+                      </>
+                    );
+                  })()}
                 </div>
               </div>
             );
